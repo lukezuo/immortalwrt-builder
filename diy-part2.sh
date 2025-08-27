@@ -18,3 +18,6 @@ sed -i 's/192.168.1.1/192.168.88.10/g' package/base-files/files/bin/config_gener
 
 # Modify hostname
 #sed -i 's/ImmortalWrt/ImmortalWrt/g' package/base-files/files/bin/config_generate
+
+# find . -type d -iname "*openclash*" -exec rm -rf {} + 2>/dev/null || true
+# git clone -b dev --depth 1 https://github.com/vernesong/OpenClash.git package/luci-app-openclash
